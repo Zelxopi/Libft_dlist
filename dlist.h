@@ -13,8 +13,8 @@
 #ifndef DLIST_H
 # define DLIST_H
 
-#include <stdio.h>
-#include "../libft/libft.h"
+# include <stdio.h>
+# include "../libft/libft.h"
 
 /*
 To use with other type of variable, modify s_node *content
