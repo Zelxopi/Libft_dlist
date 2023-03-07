@@ -6,7 +6,7 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 13:10:18 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/02/13 13:13:21 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/03/07 16:08:17 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ and both dlist_add prototype.
 */
 typedef struct s_node
 {
-	char			*content;
+	void			*content;
 	struct s_node	*next;
 	struct s_node	*prev;
 }					t_node;
@@ -34,9 +34,9 @@ typedef struct s_dlist
 }					t_dlist;
 
 //add node to end of list
-void	dlist_add_back(t_dlist *l, char *elem);
+void	dlist_add_back(t_dlist *l, void *elem);
 //add node to front of list
-void	dlist_add_front(t_dlist *l, char *elem);
+void	dlist_add_front(t_dlist *l, void *elem);
 //free list
 void	dlist_free(t_dlist *l);
 //free list AND content

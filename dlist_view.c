@@ -6,7 +6,7 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 13:35:24 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/02/10 13:58:43 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/03/07 16:07:54 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	view(t_dlist l)
 	while (aff)
 	{
 		printf("----------------\n");
-		printf("node%d:[%s]\n", i++, aff->content);
+		printf("node%d:[%s]\n", i++, (char *)aff->content);
 		aff = aff->next;
 	}
 }

@@ -6,13 +6,13 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 13:22:33 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/02/10 13:39:11 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/03/07 16:07:06 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "dlist.h"
 
-void	dlist_add_front(t_dlist *l, char *elem)
+void	dlist_add_front(t_dlist *l, void *elem)
 {
 	t_node	*new;
 
