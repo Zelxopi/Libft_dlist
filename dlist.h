@@ -6,7 +6,7 @@
 /*   By: mtrembla <mtrembla@student.42quebec>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 13:10:18 by mtrembla          #+#    #+#             */
-/*   Updated: 2023/03/07 16:08:17 by mtrembla         ###   ########.fr       */
+/*   Updated: 2023/03/21 13:49:50 by mtrembla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,6 @@
 # include <stdio.h>
 # include "../libft/libft.h"
 
-/*
-To use with other type of variable, modify s_node *content
-and both dlist_add prototype.
-*/
 typedef struct s_node
 {
 	void			*content;
@@ -43,7 +39,7 @@ void	dlist_free(t_dlist *l);
 void	dlist_free_content(t_dlist *l);
 //remove a node, no free
 void	dlist_remove_node(t_dlist *l, t_node *node);
-//print list content
+//print list content, only work with string content
 void	view(t_dlist l);
 
 #endif
